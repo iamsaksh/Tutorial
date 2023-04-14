@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Yhills Tutorial Platform</title>
+    <style>
+        body {
+            background-color: #39c2d7;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0c3d6e;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0 0 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+        }
+
+        form div label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form div input[type="text"],
+        form div input[type="email"],
+        form div select {
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        form input[type="submit"] {
+            background-color: #343a40;
+            border: none;
+            border-radius: 3px;
+            color: #dbd1d1;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #23272b;
+        }
+
+        footer {
+            background-color: #23272b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Yhills Tutorial Platform</h1>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:8000/">Home</a></li>
+            <li><a href="about" target="_blank">About</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Welcome to Yhills Tutorial Platform!</h2>
+    <p>We provide tutorials in the form of videos and paragraphs to help you learn more effectively.</p>
+    <h3>Our Courses</h3>
+    <ul>
+        <li><a href="web-dev" target="_blank">Web Dev</a></li>
+        <li><a href="ai-ml" target="_blank">AI and ML</a></li>
+        <li><a href="basic-coding" target="_blank">Basic Coding</a></li>
+    </ul>
+    <h3>Student Information</h3>
+    <form method="post" action="submit_form/">
+        {{ form.as_div }}
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+</main>
+<footer>
+    <p>© 2023 Tutorial Platform</p>
+</footer>
+
+</body>
+</html>
+        
+        
