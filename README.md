@@ -1,5 +1,3 @@
-Web platform for an education and teaching company, providing a wide range of courses and tutorials across different subjects. The platform allows users to browse, enroll in courses, and access educational content. It also provides an administrative interface for managing courses, instructors, and students.
-
 Features
 1. Course Catalog: Browse through a wide variety of courses and tutorials across multiple subjects and categories.
 2. Course Enrollment: Users can create accounts, view course details, and enroll in courses.
